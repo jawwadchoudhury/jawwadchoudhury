@@ -1,0 +1,131 @@
+#screen {
+    background-image: url('https://images.pexels.com/photos/129208/pexels-photo-129208.jpeg'); /*https://www.pexels.com/photo/macbook-pro-129208/ FREE - TAKEN BY NAO TRIPONEZ*/
+    /*background-image: url('../public/pexels-photo-129208-medium.jpg');*/
+    background-color: #444;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
+    cursor: crosshair;
+    min-height: 100vh;
+}
+
+::selection {
+    background: white;
+    color: #444;
+}
+
+a {
+    cursor: crosshair;
+}
+
+.landingh1 {
+    color: white;
+    margin-top: calc((100vh - 5.5rem) / 2.5);
+    margin-left: 60vw;
+    font-size: 2rem;
+}
+.desc {
+    color: white;
+    margin-top: calc((100vh - 5.5rem) / 100);
+    margin-left: 60vw;
+    font-size: 1.1rem;
+}
+.profiles {
+    color: white;
+    margin-top: calc((100vh - 5.5rem) / 100);
+    margin-left: 60vw;
+    font-size: 1.3rem;
+}
+
+.profiles a {
+    padding-left: 3.5px;
+    padding-right: 3.5px;
+    opacity: 60%;
+    transition: .5s ease-in-out;
+}
+
+.profiles a:hover {
+    opacity: 100%;
+    transition: .5s ease-in-out;
+}
+
+h3 {
+    color: white;
+    font-size: large;
+    text-align: center;
+}
+
+.card {
+    background-color: #d4d4d4;
+    width: 25vw;
+    height: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    border-radius: 20px;
+    text-align: center;
+    transition: .5s ease-in-out;
+}
+/*b9b9b9 E34F26 d4d4d4*/
+/* 264de4  e9ca32*/
+
+.cardsvg {
+    width: 7.5vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.html:hover {
+    background-color: #E34F26;
+    transition: .5s ease-in-out;
+}
+.html:hover .cardsvg .outside {
+    fill: white;
+    transition: .5s ease-in-out;
+}
+.html:hover .cardsvg .inside {
+    fill: #E34F26;
+    transition: .5s ease-in-out;
+}
+
+.css:hover {
+    background-color: #264de4;
+    transition: .5s ease-in-out;
+}
+.css:hover .cardsvg .outside {
+    fill: white;
+    transition: .5s ease-in-out;
+}
+.css:hover .cardsvg .inside {
+    fill: #264de4;
+    transition: .5s ease-in-out;
+}
+
+.js:hover {
+    background-color: #e5a228;
+    transition: .5s ease-in-out;
+}
+.js:hover .cardsvg .outside {
+    fill: white;
+    transition: .5s ease-in-out;
+}
+.js:hover .cardsvg .inside {
+    fill: #e5a228;
+    transition: .5s ease-in-out;
+}
+
+.moresvg {
+    width: 8%;
+    margin-left: auto;
+    margin-right: auto;
+}

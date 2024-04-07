@@ -1,0 +1,23 @@
+html {
+  scroll-behavior: smooth;
+  cursor: crosshair;
+  min-height: 100vh;
+}
+
+.testdiv {
+  background-color: #444;
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 90vh;
+}
+
+.text {
+  color: white;
+  margin-top: calc((100vh - 5.5rem) / 2);
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2rem;
+}
