@@ -11,10 +11,15 @@ const prompt = Prompt({
 })
 
 export const metadata: Metadata = {
-  title: 'Home'
+  title: 'Home | Jawwad Choudhury',
+  description: '(Web Developer and Programmer)',
+  metadataBase: new URL('https://jawwadchoudhury.co.uk'),
 }
 
 export default function Home() {
+
+  
+
   return (
     <>
         <div id="screen" data-src="https://images.pexels.com/photos/129208/pexels-photo-129208.jpeg">
@@ -22,8 +27,10 @@ export default function Home() {
             <h2 className='desc'><p className={prompt.className}>(Web Developer and Programmer)</p></h2>
             <h2 className="profiles"><Link href='https://www.github.com/jawwadchoudhury' rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faGithub} /></Link><Link href='https://www.twitter.com/jawwadchoudhury' rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faXTwitter} /></Link><Link href='https://www.instagram.com/jawwadchoudhury' rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faInstagram} /></Link></h2>
         </div>
-        <div className="pt-5 pb-10 bg-[#444]">
-        <h3 className='pb-5'><p className={prompt.className}>I&apos;m a web developer from the UK, and have several years of experience on all sorts of frameworks and tools, and can design and create responsive websites efficiently for all devices and platforms.</p></h3>
+        <div className="pt-[200vh] pb-10 bg-[#202020] text-white" id="about">
+          <h1>About</h1>
+        </div>
+        {/*<h3 className='pb-5'><p className={prompt.className}>I&apos;m a web developer from the UK, and have several years of experience on all sorts of frameworks and tools, and can design and create responsive websites efficiently for all devices and platforms.</p></h3>
         <h3 className="text-3xl pb-7"><p className={prompt.className}>Here&apos;s what I can do...</p></h3>
         <div className='flex flex-wrap gap-[1vw]'>
           <div className='card html'>
@@ -73,8 +80,7 @@ export default function Home() {
         </svg>
         <svg xmlns="http://www.w3.org/2000/svg" fill="#d4d4d4" viewBox="-1.5 0 24 24" className='moresvg'><path d="m10.639 24c-.001 0-.002 0-.003 0-.339 0-.656-.091-.928-.251l.009.005-2.937-1.737c-.438-.246-.224-.332-.08-.383.506-.159.946-.365 1.352-.618l-.024.014c.028-.013.06-.02.094-.02.046 0 .089.014.125.038l-.001-.001 2.256 1.339c.039.021.086.034.136.034s.097-.013.138-.035l-.002.001 8.794-5.077c.081-.05.134-.138.134-.238 0-.001 0-.001 0-.002v-10.147c-.001-.101-.055-.19-.136-.239l-.001-.001-8.791-5.072c-.039-.022-.086-.035-.135-.035s-.096.013-.137.036l.001-.001-8.789 5.073c-.083.049-.138.138-.139.24v10.149c0 .101.055.188.137.234l.001.001 2.41 1.392c1.307.654 2.107-.116 2.107-.889v-10.022c0-.14.114-.254.254-.254h.003 1.115.001c.14 0 .254.113.254.254v10.022c0 1.745-.95 2.746-2.604 2.746-.02 0-.043.001-.066.001-.725 0-1.402-.205-1.976-.56l-2.29-1.318c-.556-.328-.922-.923-.922-1.605v-10.151c.001-.68.368-1.273.914-1.595l.009-.005 8.795-5.082c.267-.149.585-.236.924-.236s.658.088.934.241l-.01-.005 8.794 5.082c.555.327.921.92.923 1.6v10.15c-.001.681-.368 1.276-.915 1.6l-.009.005-8.792 5.078c-.264.155-.582.246-.922.246-.002 0-.005 0-.007 0z"/><path d="m13.356 17.009c-3.848 0-4.655-1.766-4.655-3.249v-.001c0-.14.113-.253.253-.253h.002 1.137.001c.127 0 .232.093.252.214v.001c.171 1.158.683 1.742 3.01 1.742 1.853 0 2.64-.419 2.64-1.402 0-.567-.223-.987-3.102-1.269-2.406-.24-3.894-.77-3.894-2.695 0-1.774 1.496-2.833 4-2.833 2.818 0 4.212.978 4.388 3.076.001.007.001.015.001.022 0 .141-.114.254-.254.254h-1.133c-.12 0-.221-.085-.246-.198v-.002c-.274-1.218-.94-1.607-2.746-1.607-2.023 0-2.258.705-2.258 1.232 0 .64.278.826 3.009 1.187 2.702.358 3.986.863 3.986 2.762-.004 1.919-1.601 3.017-4.388 3.017z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" fill="#d4d4d4" viewBox="0 0 24 24" className='moresvg'><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-        </div>
-      </div>
+        </div> */}
       
     </>
     

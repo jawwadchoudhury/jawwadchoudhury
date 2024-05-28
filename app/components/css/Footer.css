@@ -1,0 +1,22 @@
+.textitem {
+    transition: 0.2s ease-in-out;
+    color: #909499;
+}
+
+.textitem:hover {
+    transition: 0.2s ease-in-out;
+    color: white;
+}
+
+.jawwadchoudhury {
+    transition: 0.2s ease-in-out;
+    border-bottom: 1px solid #909499;
+    color: #909499;
+}
+
+.jawwadchoudhury:hover {
+    transition: 0.2s ease-in-out;
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+    color: white;
+}
