@@ -48,7 +48,7 @@ export default function Navbar() {
           <span className="menu flex [&>li]:pl-8 [&>li>a]:text-center [&>li>a]:relative [&>li>a]:transition [&>li>a]:duration-200 [&>li>a]:ease-in-out [&>li>a]:font-medium [&>li>a]:text-lg">
             <li onClick={() => scrolltoHash('about')}><Link href="/#" className='link'><p className={prompt.className}>About</p></Link></li>
             <li onClick={() => scrolltoHash('projects')}><Link href="/#" className='link'><p className={prompt.className}>Projects</p></Link></li>
-            <li><Link href="/contact" className='link'><p className={prompt.className}>Contact</p></Link></li>
+            <li onClick={() => scrolltoHash('contact')}><Link href="/#" className='link'><p className={prompt.className}>Contact</p></Link></li>
 
             <label htmlFor="check" className="close-menu"><FontAwesomeIcon icon={faXmark} /></label>
           </span>
