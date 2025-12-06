@@ -1,5 +1,5 @@
 ## Jawwad Choudhury
-Hi, I'm Jawwad - a web developer from the UK - and you can visit my website [here](https://jawwadchoudhury.co.uk).
+Hi, I'm Jawwad - a web developer from the UK - and you can visit my website [here](https://jawwadchoudhury.vercel.app).
 
 You can visit [my profile](https://github.com/jawwadchoudhury) to see many more of my projects.
 
@@ -10,3 +10,4 @@ Just like [this project](https://github.com/jawwadchoudhury/jawwadchoudhury), I 
 Thank you for reading,
 <br>
 Jawwad Choudhury
+<sub>jawwadc@outlook.com<sub>
