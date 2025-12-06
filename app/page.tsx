@@ -20,7 +20,7 @@ export default function Home() {
     <>
         <div id="screen" data-src="https://images.pexels.com/photos/129208/pexels-photo-129208.jpeg">
             <h1 className='landingh1'><p className={prompt.className}><span className='font-bold'>Steady on...</span></p></h1>
-            <h2 className='desc'><p className={prompt.className}>The website's not ready just yet, but keep a watchful eye,<br/> and it'll be ready to go soon.</p></h2>
+            <h2 className='desc'><p className={prompt.className}>The website&apos;s not ready just yet, but keep a watchful eye,<br/> and it&apos;ll be ready to go soon.</p></h2>
             <h2 className="profiles">
               <Link href='https://www.github.com/jawwadchoudhury' rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faGithub} /></Link>
               <Link href='https://www.instagram.com/jawwadchoudhury' rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faInstagram} /></Link>
